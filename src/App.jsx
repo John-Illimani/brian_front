@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Router, Routes } from "react-router-dom";
 import { SchoolLogin } from "./pages/login";
 import { StudentSidebar } from "./pages/rol_student/sidebar_student";
 
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<SchoolLogin />} />
           <Route element={<PrivateRoute />}>
@@ -68,7 +68,7 @@ function App() {
             </Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

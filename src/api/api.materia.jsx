@@ -1,7 +1,7 @@
 import axios from "axios";
 import { area } from "framer-motion/client";
 
-const API_URL = "http://localhost:20000/materias"; // cambia el puerto según tu backend
+const API_URL = "https://brian-back-1.onrender.com/materias"; // cambia el puerto según tu backend
 
 // ==================== GET: Obtener todos los usuarios ====================
 export const getMaterias = async () => {
@@ -17,7 +17,7 @@ export const getMaterias = async () => {
 
 export async function getMateriasUsername (){
   try {
-    const response =  await axios.get("http://localhost:20000/materiasUsername");
+    const response =  await axios.get("https://brian-back-1.onrender.com/materiasUsername");
     return response.data;
   } catch (error) {
     console.error("error al traer datos de la vista del backend ", error);
@@ -28,7 +28,7 @@ export async function getMateriasUsername (){
 
 export async function getMateriasConProfesor (){
   try {
-    const response =  await axios.get("http://localhost:20000/profesoresMaterias");
+    const response =  await axios.get("https://brian-back-1.onrender.com/profesoresMaterias");
     return response.data;
   } catch (error) {
     console.error("error al traer datos de la vista del backend ", error);

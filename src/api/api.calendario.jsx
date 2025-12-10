@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:20000/calendario";
+const API_URL = "https://brian-back-1.onrender.com/calendario";
 
 export const getCalendarios = async () => {
   try {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:20000/estudiantes"; 
+const API_URL = "https://brian-back-1.onrender.com/estudiantes"; 
 
 // Obtener todos los estudiantes
 export const getEstudiantes = async () => {
@@ -28,7 +28,7 @@ export const createEstudiante = async (nuevoEstudiante) => {
 
 export const getEstudiantesGeneral = async () => {
   try {
-    const res = await axios.get("http://localhost:20000/profesoresGeneralEstudiantes");
+    const res = await axios.get("https://brian-back-1.onrender.com/profesoresGeneralEstudiantes");
     return res.data;
   } catch (error) {
     console.error("Error al obtener datos generales del estudiante:", error);

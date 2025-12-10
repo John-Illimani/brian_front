@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:20000";
+const API_URL = "https://brian-back-1.onrender.com";
 
 // ======== USUARIOS ======== //
 export const getUsuarios = async () => {

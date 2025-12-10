@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:20000/calificaciones"; // cambia el puerto según tu backend
+const API_URL = "https://brian-back-1.onrender.com/calificaciones"; 
 
 // ==================== GET: Obtener todos los usuarios ====================
 export const getCalificaciones = async () => {
@@ -16,7 +16,7 @@ export const getCalificaciones = async () => {
 export const getCalificacionesMaterias = async () => {
   try {
     const response = await axios.get(
-      `http://localhost:20000/calificacionesMaterias`
+      `https://brian-back-1.onrender.com/calificacionesMaterias`
     );
     return response.data;
   } catch (error) {

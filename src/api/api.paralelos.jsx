@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:20000/paralelo"; // cambia el puerto según tu backend
+const API_URL = "https://brian-back-1.onrender.com/paralelo"; // cambia el puerto según tu backend
 
 // ==================== GET: Obtener todos los usuarios ====================
 export const getParalelos = async () => {
